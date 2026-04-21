@@ -1,0 +1,30 @@
+.layout {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 240px;
+  border-right: 1px solid #e6e9f4;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  padding: 20px 16px 8px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+@media (max-width: 960px) {
+  .content {
+    padding: 12px;
+  }
+}
