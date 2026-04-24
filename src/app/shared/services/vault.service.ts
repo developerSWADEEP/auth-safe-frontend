@@ -11,7 +11,7 @@ import { MasterPasswordRequest } from '../../modules/auth/models/auth.model';
 @Injectable({ providedIn: 'root' })
 export class VaultService {
   private readonly http = inject(HttpClient);
-  private readonly apiUrl = 'http://localhost:8080';
+  private readonly apiUrl = '/api';
 
   public list(): Observable<VaultCredential[]> {
     return this.http.get<VaultCredential[]>(`${this.apiUrl}/vault/list`).pipe(
