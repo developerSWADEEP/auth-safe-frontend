@@ -11,7 +11,8 @@ export class AuthService {
   private readonly router = inject(Router);
   private readonly platformId = inject(PLATFORM_ID);
 
-  private readonly apiUrl = 'http://localhost:8080';
+  private readonly apiUrl = '/api';
+
   private readonly tokenKey = 'authsafe-session-token';
 
   private readonly tokenSubject = new BehaviorSubject<string | null>(null);
